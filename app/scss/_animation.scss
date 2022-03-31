@@ -1,0 +1,48 @@
+@keyframes fadein {
+    from{
+         visibility: hidden;
+         opacity: 0;
+    }
+    1%{
+        visibility: hidden;
+        opacity: 0.9;
+    }
+    
+    to{
+         visibility: visible;
+         opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from{
+         visibility: visible;
+         opacity: 1;
+    }
+    99%{
+       visibility: visible;
+        opacity: 0;
+    }
+   to {
+         visibility: hidden;
+         opacity: 0;
+         background: black;
+    }
+}
+
+@keyframes increase{
+
+    0%{
+         background-size: 100%;
+    }
+   
+    50%{
+        background-size: 120%;
+    }
+   
+    100%{
+        background-size: 125%;
+    }
+
+
+}

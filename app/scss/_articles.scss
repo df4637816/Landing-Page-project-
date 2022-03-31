@@ -1,0 +1,109 @@
+.articles{
+    min-width: 100%;
+    height: auto;
+    background-color:$veryLightGray
+
+}
+
+.article{
+   
+   &__content{
+            display: flex;
+            flex-direction: column;
+            
+           h2{ 
+               align-self: center;
+               @include breakpoint-up(large){
+                    align-self: start;
+                    margin-left: 7rem;
+               }
+               @include breakpoint-up(xlarge){
+                    align-self: start;
+                    margin-left: 18rem;
+            }
+
+           
+            
+    }
+}
+
+     &__grid{
+           display: grid;
+           grid-template-columns: 1fr;
+           gap: 1.875rem;
+           align-self: center;
+           @include breakpoint-up(medium){
+               grid-template-columns: repeat(2,1fr);
+           }
+
+           @include breakpoint-up(large){
+               grid-template-columns: repeat(4,300px);
+               
+           }
+          
+          
+     }
+
+    &__item{
+            background-color: $White;
+            border-radius: 0.315rem;
+            overflow: hidden;
+            box-shadow:$box-shadow;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.05);
+                transition: all .3s ease-in-out;
+                
+            }
+    }
+
+    &__image{
+            
+            height:12.5rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border-radius: 10px 10px 0 0;
+            transition: background-size 10s ease;
+            &:hover{
+                //  transform: scale(1.2);
+               animation: increase .5s ease  forwards ;
+                 
+                 
+    }}
+
+    &__text{
+       
+        display: grid;
+        grid-template-rows: repeat(auto-fit,1fr);
+        padding: 1.875rem 1.875rem 2.5rem 1.875rem;
+        @include breakpoint-up(medium){
+            padding: 1.875rem 1.5625rem;
+        }
+        
+         
+    }
+
+    &__author{
+        font-size:0.625rem;
+        color:$grayBlue;
+           
+    }
+
+    &__title{
+        font-size: 1.0625rem;
+        line-height: 1.2;
+        padding:0.6em 0 ;
+        color:$darkBlue;
+
+    }
+    &__describtion{
+        font-size :0.8125rem;
+        color: $grayBlue;
+        font-weight: $weight-300;
+    }
+
+   
+
+}
+

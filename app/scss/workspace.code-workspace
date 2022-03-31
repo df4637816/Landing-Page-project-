@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "project",
+			"path": "../.."
+		},
+		{
+			"name": "images",
+			"path": "..npm /../../../../Downloads/easybank-landing-page-master/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "project"
+	}
+}
